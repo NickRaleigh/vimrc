@@ -1,11 +1,16 @@
-set nocompatible              
-filetype off 
+filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'VundleVim/Vundle.vim'
+Plugin 'gmarik/Vundle.vim'
+Plugin 'reedes/vim-thematic'
 Plugin 'digitaltoad/vim-jade'
-Plugin 'flazz/vim-colorschemes'
+Plugin 'valloric/youcompleteme'
+Plugin 'bling/vim-airline'
+Plugin 'wincent/command-t'
+Plugin 'scrooloose/nerdtree'
 
-colorscheme solarized
+call vundle#end()
+
+filetype plugin indent on
