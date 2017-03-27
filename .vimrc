@@ -1,4 +1,5 @@
 filetype off
+syntax on
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -29,7 +30,6 @@ call vundle#end()
 
 filetype plugin indent on
 set laststatus=2
-colorscheme wombat
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme             = 'luna'
 au BufNewFile,BufRead *.ejs set filetype=html
