@@ -1,5 +1,6 @@
 filetype off
 syntax on
+set noswapfile
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
