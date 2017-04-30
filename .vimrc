@@ -1,10 +1,11 @@
 filetype off
 syntax on
 set noswapfile
-
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'gmarik/Vundle.vim'
 Plugin 'grep.vim'
 Plugin 'easymotion/vim-easymotion'
@@ -23,8 +24,6 @@ Plugin 'mattn/emmet-vim'
 Plugin 'tpope/vim-markdown'
 Plugin 'tpope/vim-commentary'
 Plugin 'vimwiki/vimwiki'
-Plugin 'vim-airline/vim-airline' 
-Plugin 'vim-airline/vim-airline-themes'
 Plugin 'raimondi/delimitmate'
 
 call vundle#end()
@@ -34,10 +33,9 @@ call vundle#end()
 :set expandtab
 :let g:NERDTreeWinSize=20
 
-
 filetype plugin indent on
 set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme             = 'luna'
+let g:airline_theme = 'wombat'
 map <C-n> :NERDTreeToggle<CR>
 au BufNewFile,BufRead *.ejs set filetype=html
